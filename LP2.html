@@ -1,0 +1,1769 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<!-- meta data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--font-family-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+
+	<!-- title of site -->
+	<title>Project - Guilherme Puga</title>
+
+	<!-- For favicon png -->
+	<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+
+	<!--font-awesome.min.css-->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!--flat icon css-->
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="assets/css/animate.css">
+
+	<!--bootstrap.min.css-->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- bootsnav -->
+	<link rel="stylesheet" href="assets/css/bootsnav.css" >
+
+	<!--style.css-->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!--responsive.css-->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+	<style>
+		/* Additional project-specific styles */
+		.project-banner {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			background: url(assets/images/about/welcome-banner.jpg) no-repeat;
+			background-size: cover;
+			background-position: center;
+			height: 400px;
+		}
+		
+		.project-banner:before {
+			position: absolute;
+			content: " ";
+			top: 0;
+			left: 0;
+			background: rgba(31,44,108,.65);
+			width: 100%;
+			height: 100%;
+		}
+		
+		.project-header-text h2 {
+			color: #fff;
+			font-size: 42px;
+			font-weight: 700;
+			text-transform: uppercase;
+			line-height: 1.5;
+			position: relative;
+		}
+		
+		.project-header-text h2 span {
+			color: #49b6ff;
+		}
+		
+		.project-header-text p {
+			color: #fff;
+			font-size: 18px;
+			font-weight: 300;
+			margin: 20px 0;
+			position: relative;
+		}
+		
+		.project-details {
+			padding: 80px 0;
+		}
+		
+		.project-section {
+			margin-bottom: 60px;
+		}
+		
+		.project-section h3 {
+			font-size: 24px;
+			color: #3c4258;
+			margin-bottom: 20px;
+			font-weight: 600;
+		}
+		
+		.project-section p {
+			font-size: 16px;
+			color: #636a82;
+			line-height: 1.8;
+			margin-bottom: 20px;
+		}
+		
+		.project-tech {
+			margin: 30px 0;
+		}
+		
+		.project-tech span {
+			display: inline-block;
+			background: #49b6ff;
+			color: #fff;
+			padding: 8px 15px;
+			border-radius: 3px;
+			margin: 5px;
+			font-size: 14px;
+		}
+		
+		.project-image {
+			border-radius: 5px;
+			overflow: hidden;
+			box-shadow: 0 5px 20px rgba(14,25,80,.30);
+			margin: 30px 0;
+		}
+		
+		.project-image img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		
+		.project-features ul {
+			padding-left: 20px;
+		}
+		
+		.project-features ul li {
+			font-size: 16px;
+			color: #636a82;
+			margin-bottom: 10px;
+			list-style-type: disc;
+		}
+		
+		.cta-button {
+			display: inline-block;
+			width: 200px;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			border-radius: 3px;
+			text-transform: capitalize;
+			color: #fff;
+			background: #49b6ff;
+			border: 1px solid #49b6ff;
+			box-shadow: 0 5px 20px rgba(0,0,0,.2);
+			transition: 0.3s linear;
+			margin: 20px auto;
+			font-size: 16px;
+		}
+		
+		.cta-button:hover {
+			box-shadow: 0 5px 20px rgba(0,0,0,.4);
+			background: #49b6ff;
+			border: 1px solid #28a8fd;
+		}
+    .code-showcase {
+        padding: 50px 0;
+        background: #f9fbfd;
+    }
+    
+    .code-tabs {
+        margin-top: 30px;
+        border: 1px solid #e5ebf2;
+        border-radius: 5px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    
+    .nav-tabs {
+        background: #f5f7fa;
+        border-bottom: 1px solid #e5ebf2;
+    }
+    
+    .nav-tabs > li > a {
+        color: #3c4258;
+        font-weight: 500;
+        border: none;
+        border-radius: 0;
+        padding: 15px 20px;
+    }
+    
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:focus,
+    .nav-tabs > li.active > a:hover {
+        background: #fff;
+        border: none;
+        color: #49b6ff;
+        border-bottom: 2px solid #49b6ff;
+    }
+    
+    .tab-content {
+        padding: 0;
+    }
+    
+    .code-block {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: #2d2d2d;
+        border-radius: 0 0 4px 4px;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+    
+    .code-block code {
+        display: block;
+        padding: 20px;
+        color: #f8f8f2;
+        font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        font-size: 14px;
+        line-height: 1.5;
+        white-space: pre;
+        tab-size: 4;
+    }
+    
+    /* Syntax highlighting colors */
+    .code-block .keyword { color: #ff79c6; }
+    .code-block .comment { color: #6272a4; }
+    .code-block .string { color: #f1fa8c; }
+    .code-block .number { color: #bd93f9; }
+    .code-block .function { color: #50fa7b; }
+    .code-block .method { color: #8be9fd; }
+    </style>
+</head>
+
+<body>
+<!-- top-area Start -->
+<header class="top-area">
+	<div class="header-area">
+		<!-- Start Navigation -->
+		<nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+			<div class="container">
+				<!-- Start Header Navigation -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a class="navbar-brand" href="index.html">Guilherme Puga</a>
+				</div>
+				<!-- End Header Navigation -->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+						<li><a href="index.html">home</a></li>
+						<li><a href="index.html#contact">contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End Navigation -->
+	</div>
+	<div class="clearfix"></div>
+</header>
+<!-- top-area End -->
+
+<!-- Project Banner start -->
+<section class="project-banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="project-header-text">
+					<h2>THE <span>NIGHT</span> OF THE LIVING DEISI</h2>
+					<p>A back-end project</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Project Banner end -->
+
+<!-- Project Details start -->
+<section class="project-details">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<!-- Overview Section -->
+				<div class="project-section">
+					<h3>Project Overview</h3>
+					<p>
+						"The Night of the Living DEISI" is a Java-based game project that simulates a zombie apocalypse scenario. The game follows a turn-based system where players navigate humans through a world infested with zombies, with the goal of survival. The project was developed in two phases, with the second phase introducing more advanced features and implementing object-oriented programming principles.
+					</p>
+					<div class="project-image">
+						<img src="assets/images/portfolio/p2-1.jpg" alt="back-end project example">
+					</div>
+				</div>
+				
+				<!-- Technologies Section -->
+				<div class="project-section">
+					<h3>Technologies Used</h3>
+					<p>
+						This project integrates hardware and software components using modern technologies and development practices.
+					</p>
+					<div class="project-tech">
+						<span>Java 17</span>
+						<span>Object-Oriented Programming</span>
+						<span>JUnit 5 for automated testing</span>
+						<span>Exception handling</span>
+						<span>File I/O for game state saving/loading</span>
+						<span>UML for system design</span>
+						<span>GitHub for version control</span>
+					</div>
+				</div>
+				
+				<!-- Features Section -->
+				<div class="project-section project-features">
+					<h3>Key Features</h3>
+					<ul>
+						<li>Entity System: Various creature types (humans and zombies) with different behaviors and attributes</li>
+						<li>Equipment System: Different equipment types that can be used by creatures</li>
+						<li>Day/Night Cycle: Game mechanics that change based on time of day</li>
+						<li>Safe Havens: Protected areas where humans can take refuge</li>
+						<li>Movement System: Turn-based movement with validity checks</li>
+						<li>Game State Management: Ability to save and load game states</li>
+						<li>Game Over Conditions: Logic to determine when the game ends</li>
+						<li>Survivor Tracking: Functionality to track which humans have survived</li>
+					</ul>
+				</div>
+				
+				<!-- Implementation Section -->
+				<div class="project-section">
+					<h3>Implementation</h3>
+					<p>
+						The project follows a robust object-oriented design with proper encapsulation, inheritance, and polymorphism. The architecture is centered around the GameManager class which serves as the main controller, interacting with other components:
+					</p>
+					<p>
+						<strong>1. Creature Hierarchy:</strong> An abstract Creature class with specific implementations for different types (humans and zombies).
+					</p>
+					<p>
+						<strong>2. Equipment System:</strong> Equipment classes with different types and effects.
+					</p>
+					<p>
+						<strong>3. World Representation:</strong> A grid-based world with different types of squares (normal, safe haven).
+					</p>
+                    <p>
+						<strong>4. File Handling:</strong> Custom exception handling for file operations with the InvalidFileException class.
+					</p>
+					<a class="project-image" href="assets/images/portfolio/p2-2.jpg" data-lightbox="portfolio">
+                        <img src="assets/images/portfolio/p2-2.jpg" alt="System Architecture Diagram" style="max-width: 100%; height: auto;">
+                    </a>
+				</div>
+				
+				<!-- Challenges Section -->
+				<div class="project-section">
+                    <h3>Challenges & Solutions</h3>
+                
+                    <div class="challenge">
+                        <h4><strong>Complex Entity Behavior in a Dynamic World</strong></h4>
+                        <h5>Challenge:</h5>
+                        <p>Modeling different creature behaviors efficiently while maintaining scalability and code reusability.</p>
+                        <h5>Solution:</h5>
+                        <p>Implemented a hierarchical class structure using inheritance and polymorphism to define diverse creature behaviors.</p>
+                    </div>
+                
+                    <div class="challenge">
+                        <h4><strong>Ensuring Game State Persistence Across Sessions</strong></h4>
+                        <h5>Challenge:</h5>
+                        <p>Saving and loading game progress reliably while preventing data corruption or loss.</p>
+                        <h5>Solution:</h5>
+                        <p>Developed a custom file format and implemented serialization/deserialization logic with proper exception handling.</p>
+                    </div>
+                
+                    <div class="challenge">
+                        <h4><strong>Designing a Safe Haven for Creatures</strong></h4>
+                        <h5>Challenge:</h5>
+                        <p>Creating a special area in the game world where creatures can be safe from monsters.</p>
+                        <h5>Solution:</h5>
+                        <p>Designed a unique type of square in the world with special properties and requirements for creatures.</p>
+                    </div>
+                
+                    <div class="challenge">
+                        <h4><strong>Validating Movement Based on Game Rules</strong></h4>
+                        <h5>Challenge:</h5>
+                        <p>Ensuring movement rules consider creature type, equipment, environmental conditions, and world boundaries.</p>
+                        <h5>Solution:</h5>
+                        <p>Implemented a comprehensive rule system to validate movement based on multiple gameplay factors.</p>
+                    </div>
+                
+                    <div class="challenge">
+                        <h4><strong>Achieving High Test Coverage for System Reliability</strong></h4>
+                        <h5>Challenge:</h5>
+                        <p>Guaranteeing system stability by covering all critical functionalities and edge cases in testing.</p>
+                        <h5>Solution:</h5>
+                        <p>Employed JUnit 5 to develop a robust test suite that ensures coverage of key logic and potential failure points.</p>
+                    </div>
+                </div>
+                
+				
+				<!-- Results Section -->
+				<div class="project-section">
+					<h3>Results & Impact</h3>
+					<p>
+						- Successfully implemented all required features with a clean, maintainable codebase.
+					</p>
+					<p>
+						- Achieved high test coverage ensuring robust functionality.
+					</p>
+					<p>
+						- Applied object-oriented principles effectively to create a flexible and extensible system.
+					</p>
+                    <p>
+                        - Demonstrated proficiency in Java programming, including advanced features like exception handling.
+                    </p>
+                    <p>
+                        - Created a functional game that simulates complex interactions between entities.
+                    </p>
+                    <p>
+                        The project demonstrates strong software engineering principles, particularly in object-oriented design and test-driven development. The modular architecture allows for easy extension with new creature types, equipment, and game mechanics.
+                    </p>
+				</div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset">
+                            <div class="project-section">
+                                <h3>Code Samples</h3>
+                                <p>
+                                    Below are some Classes that showcase the implementation of core features in this project.
+                                </p>
+                                
+                                <!-- Code Tabs Interface -->
+                                <div class="code-tabs">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#gameManager" aria-controls="gameManager" role="tab" data-toggle="tab">Game Manager</a></li>
+                                        <li role="presentation"><a href="#creature" aria-controls="creature" role="tab" data-toggle="tab">Creature Class</a></li>
+                                        <li role="presentation"><a href="#equipment" aria-controls="equipment" role="tab" data-toggle="tab">Equipment</a></li>
+                                    </ul>
+                                    
+                                    <!-- Tab Content -->
+                                    <div class="tab-content">
+                                        <!-- Game Manager Code Sample -->
+                                        <div role="tabpanel" class="tab-pane active" id="gameManager">
+                                            <pre class="code-block">
+            <code class="language-java">
+                package pt.ulusofona.lp2.thenightofthelivingdeisi;
+
+                import javax.swing.*;
+                import java.io.*;
+                import java.util.*;
+                
+                public class GameManager {
+                    private int tabuleiroColunas;
+                    private int tabuleiroLinhas;
+                    private int equipaInicial;
+                    private int counterRondas = 0;
+                    private int ultimaRondaComMorteOuTransformacao = 0;
+                    private int jogador;
+                
+                    private boolean pararLer = false;
+                    private boolean vivos;
+                
+                    private HashMap<Integer, Criatura> criaturas = new HashMap<>();
+                    private HashMap<Integer, Equipamento> equipamentos = new HashMap<>();
+                    private HashMap<String, String> conteudoTabuleiro = new HashMap<>(); // "x,y" -> "<TipoElemento>:<IdElemento>"
+                    private ArrayList<Criatura> safeHaven = new ArrayList<>(); // posições "x,y" dos safe havens
+                    private ArrayList<Criatura> criaturasRemovidas = new ArrayList<>();
+                    private int currentLine = 0;
+                
+                    public GameManager() {}
+                
+                    public void loadGame(File file) throws InvalidFileException {
+                
+                        // Reinicia as variaveis globais
+                        criaturas = new HashMap<>();
+                        equipamentos = new HashMap<>();
+                        conteudoTabuleiro = new HashMap<>();
+                        safeHaven = new ArrayList<>();
+                        counterRondas = 0;
+                        ultimaRondaComMorteOuTransformacao = 0;
+                        pararLer = false;
+                
+                        currentLine = 0;
+                
+                        try (Scanner scanner = new Scanner(file)) {
+                            resetGame();
+                
+                            if (!parseBoardDimensions(scanner)) {
+                                throw new InvalidFileException(currentLine, "Invalid board dimensions");
+                            }
+                            currentLine++;
+                
+                            if (!parseCurrentTeamId(scanner)) {
+                                throw new InvalidFileException(currentLine, "Invalid current team ID");
+                            }
+                            currentLine++;
+                
+                            if (!parseCreatures(scanner)) {
+                                throw new InvalidFileException(currentLine, "Invalid creatures data");
+                            }
+                
+                            if (!parseEquipments(scanner)) {
+                                throw new InvalidFileException(currentLine, "Invalid equipment data");
+                            }
+                
+                            if(pararLer){
+                
+                                return;
+                
+                            }
+                
+                            if (!parseSafeHavens(scanner)) {
+                                throw new InvalidFileException(currentLine, "Invalid safe havens data");
+                            }
+                        } catch (FileNotFoundException e) {
+                            throw new InvalidFileException(currentLine, "Invalid");
+                        }
+                    }
+                
+                    private void resetGame() {
+                        criaturas.clear();
+                        equipamentos.clear();
+                        safeHaven.clear();
+                        criaturasRemovidas.clear();
+                        counterRondas = 0;
+                    }
+                
+                    private boolean parseBoardDimensions(Scanner scanner) throws InvalidFileException{
+                        if (!scanner.hasNextLine()) {return false;}
+                
+                        String[] dimensions = scanner.nextLine().split(" ");
+                        if (dimensions.length != 2) {return false;}
+                
+                        try {
+                            tabuleiroLinhas = Integer.parseInt(dimensions[0]);
+                            tabuleiroColunas = Integer.parseInt(dimensions[1]);
+                            return tabuleiroColunas > 0 && tabuleiroLinhas > 0;
+                        } catch (NumberFormatException e) {
+                            return false;
+                        }
+                    }
+                
+                    private boolean parseCurrentTeamId(Scanner scanner) throws InvalidFileException {
+                        if (!scanner.hasNextLine()){ return false;}
+                
+                        try {
+                            equipaInicial = Integer.parseInt(scanner.nextLine());
+                            jogador = equipaInicial;
+                            vivos = equipaInicial == 20;
+                            return equipaInicial == 10 || equipaInicial == 20;
+                        } catch (NumberFormatException e) {
+                            throw new InvalidFileException(currentLine, "Isto não funciona");
+                        }
+                    }
+                
+                    private boolean parseCreatures(Scanner scanner) throws InvalidFileException {
+                        if (!scanner.hasNextLine()) {return false;}
+                
+                        try {
+                            int numCreatures = Integer.parseInt(scanner.nextLine());
+                            currentLine++;
+                
+                            for (int i = 0; i < numCreatures; i++) {
+                                if (!scanner.hasNextLine()) {return false;}
+                
+                                String[] data = scanner.nextLine().split(" : ");
+                                currentLine++;
+                
+                                if (data.length != 6) {return false;}
+                
+                                int id = Integer.parseInt(data[0]);
+                                int equipa = Integer.parseInt(data[1]);
+                                int tipo = Integer.parseInt(data[2]);
+                                String nome = data[3];
+                                int x = Integer.parseInt(data[4]);
+                                int y = Integer.parseInt(data[5]);
+                
+                                if (!isValidPosition(x, y)) {
+                                    // throw new InvalidFileException(currentLine, "Posição inválida: " + x + ", " + y);
+                                    return false;
+                                }
+                                if (!isValidTeam(equipa)) {
+                                    // throw new InvalidFileException(currentLine, "Equipe inválida: " + equipa);
+                                    return false;
+                                }
+                
+                                Criatura criatura = null;
+                
+                                if (equipa == 20){
+                                    criatura = switch (tipo) {
+                                        case 0 -> new Crianca(id, equipa, nome, x, y, null);
+                                        case 1 -> new Adulto(id, equipa, nome, x, y, null);
+                                        case 2 -> new Idoso(id, equipa, nome, x, y, null);
+                                        case 3 -> new Cao(id, equipa, nome, x, y, null);
+                                        default -> throw new InvalidFileException(currentLine, "tu ");
+                                    };
+                                    criaturas.put(id, criatura);
+                
+                                } else if (equipa == 10) {
+                                    criatura = switch (tipo) {
+                                        case 0 -> new Crianca(id, equipa, nome, x, y, null);
+                                        case 1 -> new Adulto(id, equipa, nome, x, y, null);
+                                        case 2 -> new Idoso(id, equipa, nome, x, y, null);
+                                        case 4 -> new Vampiro(id, equipa, nome, x, y, null);
+                                        default -> throw new InvalidFileException(currentLine, "tu ");
+                                    };
+                                    criaturas.put(id, criatura);
+                                }
+                
+                                String posKey = coordenadasTabuleiro(x, y);
+                                if(equipa == 10){
+                                    this.conteudoTabuleiro.put(posKey, "Z:" + id);
+                                } else {
+                                    this.conteudoTabuleiro.put(posKey, "H:" + id);
+                                }
+                            }
+                            return true;
+                        } catch (NumberFormatException e) {
+                            throw new InvalidFileException(currentLine, "Isto não funciona");
+                        }
+                    }
+                
+                    private boolean parseEquipments(Scanner scanner) throws InvalidFileException {
+                        if (!scanner.hasNextLine()){
+                            return true;
+                        };
+                
+                        try {
+                            int numEquipments = Integer.parseInt(scanner.nextLine());
+                            currentLine++;
+                
+                            if(numEquipments <= 0){
+                                return true;
+                            }
+                
+                            for (int i = 0; i < numEquipments; i++) {
+                                if (!scanner.hasNextLine()) {return false;}
+                
+                                String[] data = scanner.nextLine().split(" : ");
+                                currentLine++;
+                
+                                if (data.length != 4) {return false;}
+                
+                                int id = Integer.parseInt(data[0]);
+                                int tipo = Integer.parseInt(data[1]);
+                
+                                int x = Integer.parseInt(data[2]);
+                                int y = Integer.parseInt(data[3]);
+                
+                                Equipamento equipamento;
+                
+                                equipamento = switch (tipo) {
+                                    case 0 -> new Escudo(id, x, y, null);
+                                    case 1 -> new Espada(id, x, y, null);
+                                    case 2 -> new Pistola(id, x, y, null);
+                                    case 3 -> new Lixivia(id, x, y, null);
+                                    default -> throw new InvalidFileException(currentLine, "tu ");
+                                };
+                
+                                if (!isValidPosition(x, y)){
+                                    throw new InvalidFileException(currentLine, "Posição inválida: " + x + ", " + y);
+                                }
+                
+                                String posKey = coordenadasTabuleiro(x, y);
+                                equipamentos.put(id, equipamento);
+                                this.conteudoTabuleiro.put(posKey, "E:" + id);
+                            }
+                            return true;
+                        } catch (NumberFormatException e) {
+                            return false;
+                        }
+                    }
+                
+                    private boolean parseSafeHavens(Scanner scanner) throws InvalidFileException {
+                        if (!scanner.hasNextLine()) {
+                            return true;
+                        }
+                
+                        try {
+                            int numSafeHavens = Integer.parseInt(scanner.nextLine());
+                            currentLine++;
+                
+                            for (int i = 0; i < numSafeHavens; i++) {
+                                if (!scanner.hasNextLine()) {throw new InvalidFileException(currentLine, "Não tem SH");}
+                
+                                String[] data = scanner.nextLine().split(" : ");
+                                currentLine++;
+                
+                                if (data.length != 2) {return false;}
+                
+                                int x = Integer.parseInt(data[0]);
+                                int y = Integer.parseInt(data[1]);
+                
+                                if (!isValidPosition(x, y)) {return false;}
+                
+                                String posKey = coordenadasTabuleiro(x, y);
+                                conteudoTabuleiro.put(posKey, "SH");
+                            }
+                            return true;
+                        } catch (NumberFormatException e) {
+                            throw new InvalidFileException(currentLine, "Isto não funciona");
+                        }
+                    }
+                
+                    private boolean isValidPosition(int x, int y) {
+                        return x >= 0 && x < tabuleiroColunas && y >= 0 && y < tabuleiroLinhas;
+                    }
+                
+                    private boolean isValidTeam(int team) {
+                        return team == 10 || team == 20;
+                    }
+                
+                
+                    public int[] getWorldSize(){
+                        return new int[]{this.tabuleiroLinhas, this.tabuleiroColunas};
+                    }
+                
+                    public int getInitialTeamId(){
+                        return this.equipaInicial;
+                    }
+                
+                    public int getCurrentTeamId(){
+                        return this.jogador;
+                    }
+                
+                    public void modificaJogada(){
+                        this.jogador = (this.jogador == 10) ? 20 : 10;
+                    }
+                
+                    public boolean isDay(){
+                        return counterRondas % 4 < 2;
+                    }
+                
+                    public String getSquareInfo(int x, int y) {
+                        if (x < 0 || x >= this.tabuleiroColunas || y < 0 || y >= this.tabuleiroLinhas) {
+                            return null;
+                        }
+                
+                        String posKey = coordenadasTabuleiro(x, y);
+                        String conteudo = this.conteudoTabuleiro.getOrDefault(posKey, "");
+                
+                        if (conteudo.equalsIgnoreCase("SH")){
+                            return "SH";
+                        }
+                
+                        if (conteudo.isEmpty()) {return "";}
+                        return conteudo;
+                    }
+                
+                    public String[] getCreatureInfo(int id){
+                
+                        Criatura criatura = this.criaturas.get(id);
+                
+                        if (criatura == null){
+                            return null;
+                        }
+                
+                        return new String[]{
+                                String.valueOf(criatura.getID()),
+                                criatura.getTipoCriaturaString(),
+                                criatura.getTipoString(),
+                                criatura.getNome(),
+                                criatura.getX()==-1 ? null : String.valueOf(criatura.getX()),
+                                criatura.getY()==-1 ? null :String.valueOf(criatura.getY()),
+                                null
+                        };
+                    }
+                
+                    public String getCreatureInfoAsString(int id){
+                        Criatura criatura = this.criaturas.get(id);
+                        if (criatura == null){
+                            return null;
+                        }
+                
+                        String coordenadas = "";
+                        if (criatura.getX() == -1 && criatura.getY() == -1) {
+                            coordenadas = "Safe Haven";
+                        } else {
+                            coordenadas = "(" + criatura.getX() + ", " + criatura.getY() + ")";
+                        }
+                
+                        String infoEquipamento = "";
+                        if (criatura.getEquipamento() != null) {
+                            infoEquipamento = getEquipmentInfoAsString(criatura.getEquipamento().getId());
+                            if (infoEquipamento == null) {
+                                infoEquipamento = "";
+                            }
+                        }
+                
+                        if (criatura.getTipoCriatura() == TipoCriatura.CAO){
+                            String infoCriatura = criatura.getID() + " | "
+                                    + criatura.getTipoCriaturaString() + " | "
+                                    + criatura.getNome() + " @ "
+                                    + coordenadas;
+                
+                            if (infoEquipamento.isEmpty()) {
+                                return infoCriatura;
+                            }
+                            return infoCriatura + " | " + infoEquipamento;
+                        }
+                
+                        if (criatura.getTipoCriatura() == TipoCriatura.VAMPIRO){
+                            String infoCriatura = criatura.getID() + " | "
+                                    + criatura.getTipoCriaturaString() + " | "
+                                    + criatura.getNome() + " | -"
+                                    + criatura.totalEquipamentosDestruidos() + " @ "
+                                    + coordenadas;
+                
+                            if (infoEquipamento.isEmpty()) {
+                                return infoCriatura;
+                            }
+                            return infoCriatura + " | " + infoEquipamento;
+                        }
+                
+                        if (criatura.getTipo() == EstadoCriatura.ZOMBIE || criatura.getTipo() == EstadoCriatura.ZOMBIE_TRANSFORMADO){
+                            String infoCriatura = criatura.getID() + " | "
+                                    + criatura.getTipoCriaturaString() + " | "
+                                    + criatura.getTipoString() + " | "
+                                    + criatura.getNome() + " | -"
+                                    + criatura.totalEquipamentosDestruidos() + " @ "
+                                    + coordenadas;
+                
+                            if (infoEquipamento.isEmpty()) {
+                                return infoCriatura;
+                            }
+                            return infoCriatura + " | " + infoEquipamento;
+                        }
+                
+                        String infoCriatura = criatura.getID() + " | "
+                                + criatura.getTipoCriaturaString() + " | "
+                                + criatura.getTipoString() + " | "
+                                + criatura.getNome() + " | +"
+                                + criatura.totalEquipamentos() + " @ "
+                                + coordenadas;
+                
+                        if (infoEquipamento.isEmpty()) {
+                            return infoCriatura;
+                        }
+                        return infoCriatura + " | " + infoEquipamento;
+                    }
+                
+                    public String[] getEquipmentInfo(int id){
+                        if (equipamentoFoiApanhado(id)) {
+                            return null;
+                        }
+                
+                        Equipamento equipamento = this.equipamentos.get(id);
+                        if (equipamento == null){
+                            return null;
+                        }
+                        if (equipamento.getTipo() == TipoEquipamento.ESCUDO){
+                            return new String[]{
+                                    String.valueOf(equipamento.getId()),
+                                    "0",
+                                    String.valueOf(equipamento.getX()),
+                                    String.valueOf(equipamento.getY()),
+                                    null
+                            };
+                        }
+                        if (equipamento.getTipo() == TipoEquipamento.ESPADA){
+                            return new String[]{
+                                    String.valueOf(equipamento.getId()),
+                                    "1",
+                                    String.valueOf(equipamento.getX()),
+                                    String.valueOf(equipamento.getY()),
+                                    null
+                            };
+                        }
+                        if (equipamento.getTipo() == TipoEquipamento.PISTOLA){
+                            return new String[]{
+                                    String.valueOf(equipamento.getId()),
+                                    "2",
+                                    String.valueOf(equipamento.getX()),
+                                    String.valueOf(equipamento.getY()),
+                                    null
+                            };
+                        }
+                        return new String[]{
+                                String.valueOf(equipamento.getId()),
+                                "3",
+                                String.valueOf(equipamento.getX()),
+                                String.valueOf(equipamento.getY()),
+                                null
+                        };
+                    }
+                
+                
+                    public String getEquipmentInfoAsString(int id){
+                        Equipamento equipamento = this.equipamentos.get(id);
+                        if (equipamentos.isEmpty()){
+                            return null;
+                        }
+                
+                        if (equipamento == null) {
+                            return null;
+                        }
+                
+                        return equipamento.getInfoString();
+                    }
+                
+                    public boolean hasEquipment(int creatureID, int equipmentTypeID) {
+                        Criatura criatura = this.criaturas.get(creatureID);
+                        return criatura != null && criatura.getTipo() == EstadoCriatura.HUMANO && criatura.temEquipamentoTipo(equipmentTypeID);
+                    }
+                
+                    public boolean move(int xO, int yO, int xD, int yD) {
+                
+                        // Verificar se o destino está fora do tabuleiro
+                        if (xD < 0 || xD >= this.tabuleiroColunas || yD < 0 || yD >= this.tabuleiroLinhas) {
+                            return false;
+                        }
+                
+                        // nao pode mover para uma casa que tenha um cao
+                        if (caoNoDestino(xD, yD)) {
+                            return false;
+                        }
+                
+                        // Obter a criatura na posição de origem
+                        String posKey = coordenadasTabuleiro(xO, yO);
+                        if (conteudoTabuleiro.get(posKey) == null) {
+                            return false;
+                        }
+                
+                        String[] cria = conteudoTabuleiro.get(posKey).split(":");
+                
+                        if (cria.length < 2) {
+                            return false;
+                        }
+                
+                        Criatura criatura = this.criaturas.get(Integer.valueOf(cria[1]));
+                        if (criatura == null) {
+                            return false;
+                        }
+                
+                        if (!fazParteDaEquipaQueJoga(criatura.getTipo())) {
+                            return false;
+                        }
+                
+                        // Verificar se a criatura pode se mover para o destino
+                        if (!criatura.canMove(xD, yD, isDay())) {
+                            return false;
+                        }
+                
+                        // nao pode mover para safe haven se nao for humano
+                        if (safeHavenNoDestino(xD, yD) && criatura.getTipo() != EstadoCriatura.HUMANO) {
+                
+                            return false;
+                        }
+                
+                        // humano nao pode mover para cima de outro humano
+                        if (humanoNoDestino(xD, yD) && criatura.getTipo() == EstadoCriatura.HUMANO) {
+                            return false;
+                        }
+                
+                        // zombie nao pode mover para cima de outro zombie
+                        if (zombieNoDestino(xD, yD) && criatura.getTipo() != EstadoCriatura.HUMANO) {
+                            return false;
+                        }
+                
+                        posKey = coordenadasTabuleiro(xD, yD);
+                        boolean celulaDestinoEstaVazia = conteudoTabuleiro.get(posKey) == null;
+                
+                
+                        boolean criaturaTinhaEquipamento = criatura.getEquipamento() != null;
+                
+                        if (celulaDestinoEstaVazia) {
+                            movimentarCriatura(criatura, xD, yD);
+                        } else {
+                            if (!executarAcao(criatura, xD, yD)) {
+                                return false;
+                            }
+                        }
+                
+                        // se for idoso relocamos o equipamento que este tinha no tabuleiro
+                        if (criatura.getTipoCriatura() == TipoCriatura.IDOSO && criaturaTinhaEquipamento) {
+                            recolocarEquipamentoAposSaidaDoJogador(criatura.getEquipamento());
+                            criatura.largarEquipamento();
+                        }
+                
+                        // Incrementar contador de rodadas e modificar estado do jogo
+                        this.counterRondas++;
+                        modificaJogada();
+                
+                        mudaTurno();
+                        return true;
+                    }
+                
+                    public boolean gameIsOver(){
+                        int nrRondasSemMorteOuTransformacao = counterRondas - ultimaRondaComMorteOuTransformacao;
+                        if (nrRondasSemMorteOuTransformacao >= 8) {
+                            int contaBala = getContaBala();
+                
+                            System.out.println(contaBala);
+                            return true;
+                        }
+                
+                
+                
+                        boolean soExistemZombiesNoTabuleiro = true;
+                        boolean soExistemHumanosNoTabuleiro = true;
+                
+                        for (String item : conteudoTabuleiro.values()) {
+                            if (item == null) {continue;}
+                
+                            String[] dadosItem = item.split(":");
+                            String tipoItem = dadosItem[0];
+                
+                            // verifica se o item da celula e um 'humano'
+                            if (tipoItem.equalsIgnoreCase("H")) {
+                                soExistemZombiesNoTabuleiro = false;
+                            }
+                
+                            // verifica se o item da celula e um 'zombie'
+                            if (tipoItem.equalsIgnoreCase("Z")) {
+                                soExistemHumanosNoTabuleiro = false;
+                            }
+                        }
+                
+                
+                
+                        return soExistemHumanosNoTabuleiro || soExistemZombiesNoTabuleiro;
+                    }
+                
+                    private int getContaBala() {
+                        int contaBala = 0;
+                        for (Equipamento equipamento : equipamentos.values()){
+                            if (equipamento.getTipo() == TipoEquipamento.PISTOLA){
+                                Pistola pistola = (Pistola) equipamento;
+                                contaBala += pistola.darBalas();
+                            }
+                        }
+                
+                
+                        return contaBala;
+                    }
+                
+                    public ArrayList<String> getSurvivors() {
+                        ArrayList<String> survivors = new ArrayList<>();
+                        survivors.add("Nr. de turnos terminados:");
+                        survivors.add("" + counterRondas);
+                
+                        survivors.add("");
+                        survivors.add("OS VIVOS");
+                
+                        for (Criatura criatura : this.criaturas.values()) {
+                            if (criatura.getTipo() == EstadoCriatura.HUMANO) {
+                                survivors.add(criatura.getID() + " " + criatura.getNome());
+                            }
+                        }
+                        survivors.add("");
+                        survivors.add("OS OUTROS");
+                
+                        for (Criatura criatura : criaturas.values()) {
+                            boolean criaturaEliminada = false;
+                            for (Criatura criaturaRemovida : criaturasRemovidas) {
+                                if (criaturaRemovida.getID() == criatura.getID()) {
+                                    criaturaEliminada = true;
+                                    break;
+                                }
+                            }
+                
+                            if (criatura.getTipo() != EstadoCriatura.HUMANO && !criaturaEliminada) {
+                                survivors.add(criatura.getID() + " (antigamente conhecido como " + criatura.getNome() + ")");
+                            }
+                        }
+                
+                        survivors.add("-----");
+                
+                        return survivors;
+                    }
+                
+                    public JPanel getCreditsPanel(){
+                        return null;
+                    }
+                
+                    public HashMap<String, String> customizeBoard(){
+                        return new HashMap<>();
+                    }
+                
+                    public void saveGame(File file) throws IOException {
+                        try (FileWriter writer = new FileWriter(file)) {
+                            // Save board dimensions
+                            writer.write(tabuleiroLinhas + " " + tabuleiroColunas + "\n");
+                
+                            // Save current team ID
+                            writer.write(equipaInicial + "\n");
+                
+                            // Save creatures
+                            writer.write(criaturas.size() + "\n");
+                            for (Map.Entry<Integer, Criatura> entry : criaturas.entrySet()) {
+                                Criatura criatura = entry.getValue();
+                
+                                // Check if the creature is HUMANO (team 20) or ZOMBIE (team 10)
+                                int teamId = (criatura.equipa() == 10) ? 10 : (criatura.equipa() == 20 ? 20 : 0);  // Default to 0 if the team is unknown.
+                
+                                // Write creature details with HUMANO as 20 and ZOMBIE as 10
+                                writer.write(criatura.getID() + " : " +
+                                        teamId + " : " +  // Save 10 for ZOMBIE and 20 for HUMANO
+                                        criatura.getTipoCria() + " : " +
+                                        criatura.getNome() + " : " +
+                                        criatura.getX() + " : " +
+                                        criatura.getY() + "\n");
+                            }
+                
+                            // Save equipment
+                            writer.write(equipamentos.size() + "\n");
+                            for (Map.Entry<Integer, Equipamento> entry : equipamentos.entrySet()) {
+                                Equipamento equipamento = entry.getValue();
+                
+                                // Convert the equipment type from the enum to its numeric value (0, 1, 2, or 3)
+                                int equipamentoTipo = equipamento.getTipo().ordinal(); // ordinal() returns the integer value of the enum
+                
+                                writer.write(equipamento.getId() + " : " +
+                                        equipamentoTipo + " : " +  // Equipment types: ESCUDO = 0, ESPADA = 1, PISTOLA = 2, LIXIVIA = 3
+                                        equipamento.getX() + " : " +
+                                        equipamento.getY() + "\n");
+                            }
+                
+                            // Save safe havens
+                            writer.write((safeHaven.size()) + "\n");
+                            for (Criatura door : safeHaven) {
+                                writer.write(door.getX() + " : " + door.getY() + "\n");
+                            }
+                
+                        } catch (IOException e) {
+                            throw new IOException("Error saving game to file.", e);
+                        }
+                    }
+                
+                
+                    public List<Integer> getIdsInSafeHaven(){
+                        ArrayList<Integer> idsInSaveHaven = new ArrayList<>();
+                        for (Criatura criatura : this.safeHaven) {
+                            idsInSaveHaven.add(criatura.getID());
+                        }
+                        return idsInSaveHaven;
+                    }
+                
+                    boolean executarAcao(Criatura autor, int destinoX, int destinoY) {
+                        String posKey = coordenadasTabuleiro(destinoX, destinoY);
+                        String itemDestino = conteudoTabuleiro.get(posKey);
+                
+                        boolean casaDestinoSafeHaven = itemDestino.equalsIgnoreCase("SH");
+                
+                        if (casaDestinoSafeHaven) {
+                            movimentarHumanoParaSafeHaven(autor);
+                            return true;
+                        }
+                
+                        
+                
+                
+                        String[] dadosItemDestino = itemDestino.split(":");
+                        String tipoItemDestino = dadosItemDestino[0];
+                        int idItemDestino = Integer.parseInt(dadosItemDestino[1]);
+                
+                        boolean casaDestinoTemEquipamento = tipoItemDestino.equalsIgnoreCase("E");
+                
+                        if (casaDestinoTemEquipamento) { // equipamento no destino
+                            Equipamento equipamento = getEquipamentoPorID(idItemDestino);
+                
+                            // zombies destroem equipamento
+                            if (autor.getTipo() != EstadoCriatura.HUMANO) {
+                                autor.incrementarEquipamentosDestruidos();
+                                removerEquipamentoDoTabuleiro(equipamento.getId());
+                                movimentarCriatura(autor, destinoX, destinoY);
+                                return true;
+                            }
+                
+                            if (!autor.podeApanharEquipamento(equipamento.getTipo())) {return false;}
+                
+                
+                
+                
+                
+                            autor.apanharEquipamento(equipamento);
+                            //equipamentos.remove(equipamento.getId());
+                            removerEquipamentoDoTabuleiro(equipamento.getId());
+                            movimentarCriatura(autor, destinoX, destinoY);
+                
+                        } else { // criatura no destino
+                            Criatura vitima = getCriaturaPorID(idItemDestino);
+                            boolean autorPodeAtacar = autor.podeAtacar(vitima, isDay());
+                
+                            if (!autorPodeAtacar) {
+                                return false;
+                            }
+                
+                            boolean vitimaPodeDefender = vitima.podeDefender();
+                
+                            // vitima defender
+                            if (vitimaPodeDefender) {
+                                vitima.defender();
+                                return true;
+                            }
+                
+                            // vitima foi atacada
+                            if (vitima.getTipo() == EstadoCriatura.HUMANO) {
+                                // vitima nao defende e e transformada em zombie
+                                vitima.transformarEmZombie();
+                
+                                // atualiza dados tabuleiro
+                                posKey = coordenadasTabuleiro(vitima.getX(), vitima.getY());
+                                conteudoTabuleiro.put(posKey, vitima.getIdentificadorTabuleiro());
+                
+                                // atualiza counter de eliminacoes/transformacoes
+                                ultimaRondaComMorteOuTransformacao = counterRondas;
+                            } else {
+                                // utilizar equipamento (gastar capacidade)
+                                autor.getEquipamento().utilizarEquipamento();
+                
+                                // remove o zombie do tabuleiro
+                                removerCriaturaDoTabuleiro(vitima.getID());
+                
+                                // movimentar o jogador para o lugar do zombie que morreu
+                                movimentarCriatura(autor, destinoX, destinoY);
+                
+                                // atualiza counter de eliminacoes/transformacoes
+                                ultimaRondaComMorteOuTransformacao = counterRondas;
+                            }
+                        }
+                
+                        // movimento valido
+                        return true;
+                    }
+                
+                    void movimentarCriatura(Criatura criatura, int xDestino, int yDestino) {
+                        String posKey = coordenadasTabuleiro(criatura.getX(), criatura.getY());
+                        conteudoTabuleiro.remove(posKey);
+                        criatura.atualizarPosicao(xDestino, yDestino);
+                        String newPos = coordenadasTabuleiro(criatura.getX(), criatura.getY());
+                        conteudoTabuleiro.put(newPos, criatura.getIdentificador() + ":" + criatura.getID());
+                    }
+                
+                    boolean removerCriaturaDoTabuleiro(int idCriatura) {
+                        for (String k : conteudoTabuleiro.keySet()) {
+                            String item = conteudoTabuleiro.get(k);
+                            String[] dados = item.split(":");
+                
+                            if (dados.length < 2) {continue;}
+                            int id = Integer.parseInt(dados[1]);
+                
+                            if (id == idCriatura) {
+                                Criatura criatura = getCriaturaPorID(Integer.parseInt(dados[1]));
+                                conteudoTabuleiro.remove(k);
+                                criaturasRemovidas.add(criatura);
+                                return true;
+                            }
+                        }
+                        return false;
+                    }
+                
+                    boolean removerEquipamentoDoTabuleiro(int idEquipamento) {
+                
+                        for (String k : conteudoTabuleiro.keySet()) {
+                            String item = conteudoTabuleiro.get(k);
+                            String[] dados = item.split(":");
+                            String tipoItem = dados[0];
+                
+                            if (dados.length < 2) {continue;}
+                            int idItem = Integer.parseInt(dados[1]);
+                
+                            if (tipoItem.equalsIgnoreCase("E") && idItem == idEquipamento) {
+                                conteudoTabuleiro.remove(k);
+                                return true;
+                            }
+                        }
+                        return false;
+                    }
+                
+                    Criatura getCriaturaPorID(int idCriatura) {
+                        for (Integer id : criaturas.keySet()) {
+                            if (id == idCriatura) {return criaturas.get(id);}
+                        }
+                        return null;
+                    }
+                
+                    Equipamento getEquipamentoPorID(int idEquipamento) {
+                        for (Integer id : equipamentos.keySet()) {
+                            if (id == idEquipamento) { return equipamentos.get(id);}
+                        }
+                        return null;
+                    }
+                
+                    boolean fazParteDaEquipaQueJoga(EstadoCriatura tipoCriatura) {
+                
+                        // Verefica se é um humano e se é o seu turno
+                        if(tipoCriatura == EstadoCriatura.HUMANO && vivos){
+                            return true;
+                        }
+                        // Verefica se é um zombie/Vampiro e verefica se é o seu turno
+                        else if((tipoCriatura == EstadoCriatura.ZOMBIE || tipoCriatura == EstadoCriatura.ZOMBIE_TRANSFORMADO) && !vivos){
+                            return true;
+                        }
+                
+                        // Caso contrario retorna false
+                        return false;
+                
+                    }
+                
+                    // Faz Switch aos turnos
+                    void mudaTurno(){
+                        vivos = !vivos;
+                    }
+                
+                    boolean caoNoDestino(int destX, int destY) {
+                        String posKey = coordenadasTabuleiro(destX, destY);
+                
+                        String celulaDestino = this.conteudoTabuleiro.get(posKey);
+                        if (celulaDestino == null) {
+                            return false;
+                        }
+                
+                        String[] dados = celulaDestino.split(":");
+                
+                        if (dados.length < 2) {return false;}
+                        int id = Integer.parseInt(dados[1]);
+                
+                        Criatura criatura = getCriaturaPorID(id);
+                        if (criatura == null) {
+                            return false;
+                        }
+                
+                        return criatura.getTipoCriatura() == TipoCriatura.CAO;
+                    }
+                
+                    boolean safeHavenNoDestino(int destX, int destY) {
+                        String posKey = coordenadasTabuleiro(destX, destY);
+                        String celulaDestino = this.conteudoTabuleiro.get(posKey);
+                        if (celulaDestino == null) {return false;}
+                        return celulaDestino.equalsIgnoreCase("SH");
+                    }
+                
+                    boolean humanoNoDestino(int destX, int destY) {
+                        String posKey = coordenadasTabuleiro(destX, destY);
+                        String celulaDestino = this.conteudoTabuleiro.get(posKey);
+                        if (celulaDestino == null) {return false;}
+                
+                        String[] dados = celulaDestino.split(":");
+                        return dados[0].equalsIgnoreCase("H");
+                    }
+                
+                    boolean equipamentoNoDestino(int destX, int destY) {
+                        String posKey = coordenadasTabuleiro(destX, destY);
+                        String celulaDestino = this.conteudoTabuleiro.get(posKey);
+                        if (celulaDestino == null) {return false;}
+                
+                        String[] dados = celulaDestino.split(":");
+                        return dados[0].equalsIgnoreCase("E");
+                    }
+                
+                
+                
+                    boolean zombieNoDestino(int destX, int destY) {
+                        String posKey = coordenadasTabuleiro(destX, destY);
+                        String celulaDestino = this.conteudoTabuleiro.get(posKey);
+                        if (celulaDestino == null) {return false;}
+                
+                        String[] dados = celulaDestino.split(":");
+                        return dados[0].equalsIgnoreCase("Z");
+                    }
+                
+                    void movimentarHumanoParaSafeHaven(Criatura criatura) {
+                        removerCriaturaDoTabuleiro(criatura.getID());
+                        criatura.atualizarPosicao(-1,-1);
+                        safeHaven.add(criatura);
+                    }
+                
+                    boolean equipamentoFoiApanhado(int idEquipamento) {
+                        ArrayList<Integer> idsEquipamentosApanhados = new ArrayList<>();
+                
+                        for (Criatura criatura : this.criaturas.values()) {
+                            if(criatura.getTipoCriatura()==TipoCriatura.IDOSO){
+                                continue;
+                            }
+                            idsEquipamentosApanhados.addAll(criatura.getIdDeEquipamentosApanhados());
+                        }
+                
+                
+                
+                        return idsEquipamentosApanhados.contains(idEquipamento);
+                    }
+                
+                    String coordenadasTabuleiro(int x, int y) {
+                        return x + "," + y;
+                    }
+                
+                    void recolocarEquipamentoAposSaidaDoJogador(Equipamento equipamento) {
+                        String posKey = coordenadasTabuleiro(equipamento.getX(), equipamento.getY());
+                        conteudoTabuleiro.put(posKey, "E:" + equipamento.getId());
+                    }
+                }
+                
+                
+                //O jogo acaba quando passam 8 turnos sem que haja transformações de humanos em zombies ou a destruição de zombies
+                //Ou se existirem elementos de um tipo no mapa(Vivos/zombies)
+                
+                
+                //o gravar ficheiro regista as posições
+            </code>
+                                            </pre>
+                                        </div>
+                                        
+                                        <!-- Creature Class Sample -->
+                                        <div role="tabpanel" class="tab-pane" id="creature">
+                                            <pre class="code-block">
+            <code class="language-java">
+                package pt.ulusofona.lp2.thenightofthelivingdeisi;
+
+                import java.awt.*;
+                import java.util.ArrayList;
+                
+                
+                enum EstadoCriatura {
+                    HUMANO,
+                    ZOMBIE,
+                    ZOMBIE_TRANSFORMADO
+                }
+                
+                public abstract class Criatura {
+                    private int id;
+                    private EstadoCriatura tipo;
+                    private String nome;
+                    private Image img;
+                    private Equipamento equipamento;
+                    private ArrayList<Integer> idDeEquipamentosApanhados = new ArrayList<>();
+                    private int contadorEquipamentosDestruidos;
+                    private int x, y ;
+                    private int idEquipa;
+                    private int tipoCriatura;
+                
+                    public Criatura(int id, int idEquipa, String nome, int x, int y, Image img) {
+                        this.id = id;
+                        this.nome = nome;
+                        this.x = x;
+                        this.y = y;
+                        this.img = img;
+                        this.idEquipa = idEquipa;
+                
+                        if (idEquipa == 10) {
+                            this.tipo = EstadoCriatura.ZOMBIE;
+                        } else {
+                            this.tipo = EstadoCriatura.HUMANO;
+                        }
+                    }
+                
+                    int getTipoCria(){
+                        return 0;
+                    }
+                
+                    int equipa(){
+                        return idEquipa;
+                    }
+                
+                    int getID() {
+                        return this.id;
+                    }
+                
+                    String getNome() {
+                        return this.nome;
+                    }
+                
+                    int getX() {
+                        return this.x;
+                    }
+                
+                    int getY() {
+                        return this.y;
+                    }
+                
+                    Equipamento getEquipamento() {
+                        return this.equipamento;
+                    }
+                
+                    void atualizarPosicao(int x, int y) {
+                        this.x = x;
+                        this.y = y;
+                
+                        // nao atualizar a posicao do equipamento quando e idoso
+                        if (this.getTipoCriatura() != TipoCriatura.IDOSO) {
+                            if (this.equipamento != null) {
+                                this.equipamento.atualizarPosicao(x, y);
+                            }
+                        }
+                    }
+                
+                    EstadoCriatura getTipo() {
+                        return this.tipo;
+                    }
+                
+                    public abstract TipoCriatura getTipoCriatura();
+                
+                    String getTipoString() {
+                        return switch (this.tipo) {
+                            case HUMANO -> "Humano";
+                            case ZOMBIE -> "Zombie";
+                            default -> "Zombie (Transformado)";
+                        };
+                    }
+                
+                    char getIdentificador() {
+                        if (this.tipo == EstadoCriatura.HUMANO) {
+                            return 'H';
+                        }
+                        return 'Z';
+                    }
+                
+                    abstract String getTipoCriaturaString();
+                
+                    abstract boolean canMove(int destinoX, int destinoY, boolean isDay);
+                
+                    boolean temEquipamentoUtilizavel() {
+                        if (this.equipamento == null){ return false;}
+                        return equipamento.equipamentoUtilizavel();
+                    }
+                
+                    boolean temEquipamentoOfensivo() {
+                        if (this.equipamento == null) {
+                            return false;
+                        }
+                        return this.equipamento.getUtilidade() == UtilidadeEquipamento.OFENSIVO;
+                    }
+                
+                    boolean podeApanharEquipamento(TipoEquipamento tipoEquipamento) {
+                        if (this.getTipo() == EstadoCriatura.HUMANO) {
+                            return this.podeApanharEquipamentoEnquantoHumano(tipoEquipamento);
+                        }
+                        return false;
+                    }
+                
+                    abstract boolean podeApanharEquipamentoEnquantoHumano(TipoEquipamento tipoEquipamento);
+                
+                    boolean apanharEquipamento(Equipamento equipamento) {
+                        if (podeApanharEquipamentoEnquantoHumano(equipamento.getTipo())) {
+                            this.idDeEquipamentosApanhados.add(equipamento.getId());
+                            this.equipamento = equipamento;
+                            return true;
+                        }
+                        return false;
+                    }
+                
+                    int totalEquipamentos() {
+                        return this.idDeEquipamentosApanhados.size();
+                    }
+                
+                    boolean temEquipamentoTipo(int idTipoEquipamento) {
+                        if (this.equipamento == null) {return false;}
+                
+                        if (idTipoEquipamento == 0 && this.equipamento.getTipo() == TipoEquipamento.ESCUDO) {return true;}
+                        if (idTipoEquipamento == 1 && this.equipamento.getTipo() == TipoEquipamento.ESPADA) {return true;}
+                        if (idTipoEquipamento == 2 && this.equipamento.getTipo() == TipoEquipamento.PISTOLA) {return true;}
+                        if (idTipoEquipamento == 3 && this.equipamento.getTipo() == TipoEquipamento.LIXIVIA) {return true;}
+                
+                        return false;
+                    }
+                
+                    boolean podeAtacar(Criatura vitima, boolean isDay) {
+                        if (this.getTipo() == EstadoCriatura.HUMANO) {
+                            if (!this.temEquipamentoOfensivo() || !this.temEquipamentoUtilizavel()) {
+                                return false;
+                            }
+                
+                            if (vitima.getTipo() == EstadoCriatura.HUMANO) {
+                                return false;
+                            }
+                
+                            return podeAtacarEnquantoHumano(vitima, isDay);
+                        } else {
+                            return podeAtacarEnquantoZombie(vitima, isDay);
+                        }
+                    }
+                
+                    boolean podeDefender() {
+                        return this.getTipo() == EstadoCriatura.HUMANO && temEquipamentoUtilizavel();
+                    }
+                
+                    abstract boolean podeAtacarEnquantoHumano(Criatura vitima, boolean isDay);
+                
+                    abstract boolean podeAtacarEnquantoZombie(Criatura vitima, boolean isDay);
+                
+                    void defender() {
+                        this.equipamento.utilizarEquipamento();
+                    }
+                
+                    void transformarEmZombie() {
+                        this.tipo = EstadoCriatura.ZOMBIE_TRANSFORMADO;
+                
+                        // equipamentos apanhados passam a destruidos
+                        this.contadorEquipamentosDestruidos = this.totalEquipamentos();
+                        // deixa de ter equipamento
+                        this.equipamento = null;
+                    }
+                
+                    String getIdentificadorTabuleiro() {
+                        String tipo = "";
+                        if (this.tipo == EstadoCriatura.HUMANO) {
+                            tipo = "H";
+                        } else {
+                            tipo = "Z";
+                        }
+                        return tipo + ":" + this.id;
+                    }
+                
+                    void incrementarEquipamentosDestruidos() {
+                        this.contadorEquipamentosDestruidos++;
+                    }
+                
+                    int totalEquipamentosDestruidos() {
+                        return this.contadorEquipamentosDestruidos;
+                    }
+                
+                    ArrayList<Integer> getIdDeEquipamentosApanhados() {
+                        return this.idDeEquipamentosApanhados;
+                    }
+                
+                    void largarEquipamento() {
+                        this.equipamento = null;
+                    }
+                
+                }
+            </code>
+                                            </pre>
+                                        </div>
+                                        
+                                        <!-- Equipment Sample -->
+                                        <div role="tabpanel" class="tab-pane" id="equipment">
+                                            <pre class="code-block">
+            <code class="language-java">
+                package pt.ulusofona.lp2.thenightofthelivingdeisi;
+
+                import java.awt.*;
+                
+                public abstract class Equipamento {
+                    private int id;
+                    private TipoEquipamento tipoEquipamento;
+                    private UtilidadeEquipamento utilidadeEquipamento;
+                    private int x;
+                    private int y;
+                    private Image img;
+                
+                    public Equipamento(int id, TipoEquipamento tipoEquipamento, UtilidadeEquipamento utilidadeEquipamento, int x, int y, Image img) {
+                        this.id = id;
+                        this.tipoEquipamento = tipoEquipamento;
+                        this.utilidadeEquipamento = utilidadeEquipamento;
+                        this.x = x;
+                        this.y = y;
+                        this.img = img;
+                    }
+                
+                    abstract String getNome();
+                
+                    abstract String getInfoString();
+                
+                    TipoEquipamento getTipo() {
+                        return this.tipoEquipamento;
+                    }
+                
+                
+                
+                
+                
+                    UtilidadeEquipamento getUtilidade() {
+                        return this.utilidadeEquipamento;
+                    }
+                
+                    int getId() {
+                        return this.id;
+                    }
+                
+                    int getX() {
+                        return this.x;
+                    }
+                
+                    int getY() {
+                        return this.y;
+                    }
+                
+                    abstract boolean equipamentoUtilizavel();
+                
+                    abstract void utilizarEquipamento();
+                
+                    void atualizarPosicao(int x, int y) {
+                        this.x = x;
+                        this.y = y;
+                    }
+                }
+            </code>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+                
+
+				<!-- Future Work Section -->
+				<div class="project-section">
+					<h3>Future Developments</h3>
+					<p>
+						This project was developed as a university assignment for the "Linguagens de Programação II" course at Universidade Lusófona. As an academic project, it was designed to demonstrate understanding of object-oriented programming concepts, Java implementation, and software engineering principles.
+					</p>
+					<p>
+						This project will not receive future updates or be maintained as a live product for the following reasons:
+					</p>
+                    <li>It was created specifically to fulfill academic requirements and demonstrate programming skills</li>
+					<li>The project scope was defined by the assignment parameters rather than market needs</li>
+                    <li>The codebase serves as a portfolio piece to showcase programming abilities rather than a product intended for distribution</li>
+                    <li>The visualizer component was provided by the university, limiting certain customization options</li>
+                    <li>The implementation focus was on meeting specific academic criteria rather than creating a commercially viable game</li>
+                    <br>
+                    <p>
+                        The project successfully demonstrates proficiency in Java programming, object-oriented design principles, and test-driven development within an academic context.
+                    </p>
+				</div>
+				
+				<!-- Contact Section -->
+				<div class="project-section text-center">
+					<h3>Interested in Learning More?</h3>
+					<p>
+						If you'd like to discuss this project or explore potential collaborations, feel free to reach out.
+					</p>
+					<a href="index.html#contact" class="cta-button">Contact Me</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Project Details end -->
+
+
+
+
+
+<!--footer-copyright start-->
+<footer id="footer-copyright" class="footer-copyright">
+	<div class="container">
+		<div class="hm-footer-copyright text-center">
+			<p>
+				&copy; copyright Guilherme Puga.
+			</p>
+		</div>
+	</div>
+
+	<div id="scroll-Top">
+		<div class="return-to-top">
+			<i class="fa fa-angle-up" id="scroll-top"></i>
+		</div>
+	</div>
+</footer>
+<!--footer-copyright end-->
+
+<!-- Include all js compiled plugins (below), or include individual files as needed -->
+<script src="assets/js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootsnav.js"></script>
+<script src="assets/js/jquery.sticky.js"></script>
+<script src="assets/js/progressbar.js"></script>
+<script src="assets/js/jquery.appear.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+
+
+</body>
+</html>
