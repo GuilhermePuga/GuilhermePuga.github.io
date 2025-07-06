@@ -1,0 +1,1072 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+
+    <!-- title of site -->
+    <title>Network Infrastructure Project - Omicron Lda</title>
+
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--flat icon css-->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
+
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--responsive.css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <style>
+        /* Project Banner */
+        .project-banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 400px;
+            margin-top: 70px;
+        }
+
+        .project-banner:before {
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            background: rgba(31,44,108,.65);
+            width: 100%;
+            height: 100%;
+        }
+
+        .project-header-text h2 {
+            color: #fff;
+            font-size: 42px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.5;
+            position: relative;
+        }
+
+        .project-header-text h2 span {
+            color: #49b6ff;
+        }
+
+        .project-header-text p {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 300;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        /* Project Details */
+        .project-details {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        /* Project Sections */
+        .project-section {
+            margin-bottom: 60px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(14,25,80,.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #49b6ff, #667eea, #764ba2);
+        }
+
+        .project-section h3 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .project-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #49b6ff, #667eea);
+            border-radius: 2px;
+        }
+
+        .project-section h4 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .project-section p {
+            font-size: 16px;
+            color: #5a6c7d;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        /* Special Section Types */
+        .success-metrics {
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 5px solid #28a745;
+            position: relative;
+        }
+
+        .success-metrics::before {
+            content: '🎯';
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            font-size: 30px;
+            background: #28a745;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+        }
+
+        .future-enhancements {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 5px solid #2196f3;
+            position: relative;
+        }
+
+        .future-enhancements::before {
+            content: '🚀';
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            font-size: 30px;
+            background: #2196f3;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+        }
+
+        .learning-outcomes {
+            background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 5px solid #9c27b0;
+            position: relative;
+        }
+
+        .learning-outcomes::before {
+            content: '🎓';
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            font-size: 30px;
+            background: #9c27b0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(156, 39, 176, 0.3);
+        }
+
+        /* Technology Tags */
+        .project-tech {
+            margin: 30px 0;
+        }
+
+        .project-tech span {
+            display: inline-block;
+            background: #49b6ff;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Tables */
+        .network-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .network-table th,
+        .network-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .network-table th {
+            background: #49b6ff;
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .network-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        /* Features List */
+        .project-features ul {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .project-features ul li {
+            font-size: 16px;
+            color: #636a82;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .project-features ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Test Results */
+        .test-result {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+
+        .test-result.success {
+            background: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+        }
+
+        .test-result:before {
+            content: "✓ ";
+            font-weight: bold;
+        }
+
+        /* Code Blocks */
+        .code-block {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+
+        /* Metrics Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .metric-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .metric-card .metric-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .metric-card .metric-text {
+            font-size: 14px;
+            color: #5a6c7d;
+            font-weight: 500;
+        }
+
+        /* Enhancement List */
+        .enhancement-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .enhancement-item {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #2196f3;
+        }
+
+        .enhancement-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .enhancement-item h5 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .enhancement-item p {
+            font-size: 14px;
+            color: #5a6c7d;
+            margin: 0;
+        }
+
+        /* Learning Highlights */
+        .learning-highlights {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin: 25px 0;
+        }
+
+        .highlight-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .highlight-tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            box-shadow: 0 3px 10px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .highlight-tag:hover {
+            transform: translateY(-2px);
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border-radius: 3px;
+            text-transform: capitalize;
+            color: #fff;
+            background: #49b6ff;
+            border: 1px solid #49b6ff;
+            box-shadow: 0 5px 20px rgba(0,0,0,.2);
+            transition: 0.3s linear;
+            margin: 20px auto;
+            font-size: 16px;
+        }
+
+        .cta-button:hover {
+            box-shadow: 0 5px 20px rgba(0,0,0,.4);
+            background: #49b6ff;
+            border: 1px solid #28a8fd;
+        }
+
+        /* Scroll to Top Button */
+        #scroll-Top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #49b6ff;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        #scroll-Top:hover {
+            background: #28a8fd;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            
+            .project-header-text h2 {
+                font-size: 28px;
+            }
+            
+            .project-section {
+                padding: 30px 20px;
+            }
+            
+            .project-section h3 {
+                font-size: 26px;
+            }
+            
+            .network-table {
+                font-size: 12px;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .enhancement-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .highlight-tags {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- top-area Start -->
+    <header class="top-area">
+        <div class="header-area">
+            <!-- Start Navigation -->
+            <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+                <div class="container">
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Guilherme Puga</a>
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li><a href="./index.html">home</a></li>
+                            <li><a href="index.html#contact">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navigation -->
+        </div>
+        <div class="clearfix"></div>
+    </header>
+    <!-- top-area End -->
+
+    <!-- Project Banner Start -->
+    <section class="project-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="project-header-text">
+                        <h2>OMICRON <span>NETWORK</span> INFRASTRUCTURE</h2>
+                        <p>Corporate Multi-Site Network Implementation using Cisco Packet Tracer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Banner End -->
+
+    <!-- Project Details Start -->
+    <section class="project-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+
+                    <!-- Project Overview Section -->
+                    <div class="project-section">
+                        <h3>Project Overview</h3>
+                        <p>
+                            This project describes the comprehensive implementation and analysis of the network infrastructure for Omicron Lda., 
+                            developed as an individual capstone project for the Computer Networks course. The project demonstrates advanced 
+                            networking concepts through the creation of a sophisticated corporate network with headquarters in Coimbra and 
+                            branches in Porto, Tavira, Viseu, and Ericeira, utilizing the Cisco Packet Tracer simulator for realistic network modeling.
+                        </p>
+                        <div class="project-features">
+                            <h4>Project Achievements</h4>
+                            <ul>
+                                <li>Successfully designed and implemented a scalable multi-site corporate network topology</li>
+                                <li>Configured advanced VLAN segmentation for enhanced security and network organization</li>
+                                <li>Deployed essential network services including DHCP, DNS, and Web services</li>
+                                <li>Established robust inter-site connectivity with optimal routing protocols</li>
+                                <li>Implemented centralized Internet access with proper security measures</li>
+                                <li>Conducted comprehensive testing and performance analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Technologies Used Section -->
+                    <div class="project-section">
+                        <h3>Technologies & Skills Demonstrated</h3>
+                        <p>
+                            This project showcases proficiency in various networking technologies and demonstrates the ability to 
+                            design, implement, and troubleshoot complex network infrastructures in enterprise environments.
+                        </p>
+                        <div class="project-tech">
+                            <span>Cisco Packet Tracer</span>
+                            <span>VLAN Configuration</span>
+                            <span>DHCP Services</span>
+                            <span>DNS Management</span>
+                            <span>Static Routing</span>
+                            <span>Layer 2 Switching</span>
+                            <span>Layer 3 Switching</span>
+                            <span>Wireless Networks</span>
+                            <span>Web Server Configuration</span>
+                            <span>Network Security</span>
+                            <span>Performance Analysis</span>
+                            <span>Troubleshooting</span>
+                        </div>
+                    </div>
+
+                    <!-- Network Architecture Section -->
+                    <div class="project-section">
+                        <h3>Network Architecture</h3>
+                        <h4>Topology Design</h4>
+                        <p>
+                            The network architecture features a hierarchical design with the main headquarters in Coimbra serving as the 
+                            central hub (3 floors) and four strategically located branch offices (Porto, Tavira, Viseu, Ericeira) each 
+                            with 1 floor. The design ensures high-speed connectivity with 1 Gbps inter-site links and 100 Mbps internal 
+                            connections, while Internet access is centralized through Coimbra with a dedicated 100 Mbps connection.
+                        </p>
+                        
+                        <h4>IP Addressing Strategy</h4>
+                        <div class="code-block">
+                            <strong>Primary Network Ranges:</strong><br>
+                            • Internal Network: 10.0.0.0/24<br>
+                            • Interconnection Network: 172.16.2.0/24<br>
+                            • ISP Network: 172.16.2.0/24<br>
+                            • Internet Gateway: 89.2.0.0/30<br><br>
+                            <strong>Site-Specific Addressing:</strong><br>
+                            • Porto Branch: 10.0.X.0<br>
+                            • Ericeira Branch: 10.1.X.0<br>
+                            • Coimbra HQ: 10.2.X.0<br>
+                            • Viseu Branch: 10.3.X.0<br>
+                            • Tavira Branch: 10.4.X.0
+                        </div>
+                    </div>
+
+                    <!-- VLAN Configuration Section -->
+                    <div class="project-section">
+                        <h3>Advanced VLAN Implementation</h3>
+                        <p>
+                            The network implements a sophisticated VLAN strategy to provide departmental isolation, enhanced security, 
+                            and improved network management. Each department across all locations has dedicated VLANs with customized 
+                            access policies and security configurations.
+                        </p>
+                        <table class="network-table">
+                            <thead>
+                                <tr>
+                                    <th>Location</th>
+                                    <th>Department</th>
+                                    <th>VLAN ID</th>
+                                    <th>Network Range</th>
+                                    <th>Subnet Mask</th>
+                                    <th>Devices</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Porto</td>
+                                    <td>Finance</td>
+                                    <td>21</td>
+                                    <td>10.0.20.0</td>
+                                    <td>255.255.255.0</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Porto</td>
+                                    <td>Administration</td>
+                                    <td>22</td>
+                                    <td>10.0.30.0</td>
+                                    <td>255.255.255.0</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Porto</td>
+                                    <td>Logistics</td>
+                                    <td>23</td>
+                                    <td>10.0.60.0</td>
+                                    <td>255.255.255.0</td>
+                                    <td>110</td>
+                                </tr>
+                                <tr>
+                                    <td>Coimbra</td>
+                                    <td>Server Farm</td>
+                                    <td>26</td>
+                                    <td>10.2.50.0</td>
+                                    <td>255.255.255.0</td>
+                                    <td>Infrastructure</td>
+                                </tr>
+                                <tr>
+                                    <td>Ericeira</td>
+                                    <td>Human Resources</td>
+                                    <td>27</td>
+                                    <td>10.1.10.0</td>
+                                    <td>255.255.255.0</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Coimbra</td>
+                                    <td>Human Resources</td>
+                                    <td>102</td>
+                                    <td>10.2.10.0</td>
+                                    <td>255.255.255.0</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>Coimbra</td>
+                                    <td>Finance</td>
+                                    <td>202</td>
+                                    <td>10.2.20.0</td>
+                                    <td>255.255.255.0</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Viseu</td>
+                                    <td>Logistics</td>
+                                    <td>602</td>
+                                    <td>10.3.60.0</td>
+                                    <td>255.255.255.0</td>
+                                    <td>130</td>
+                                </tr>
+                                <tr>
+                                    <td>Tavira</td>
+                                    <td>Logistics</td>
+                                    <td>802</td>
+                                    <td>10.4.60.0</td>
+                                    <td>255.255.255.0</td>
+                                    <td>150</td>
+                                </tr>
+                                <tr>
+                                    <td>Coimbra</td>
+                                    <td>Wireless Access</td>
+                                    <td>902</td>
+                                    <td>10.2.70.0</td>
+                                    <td>255.255.255.0</td>
+                                    <td>Mobile Users</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Equipment Section -->
+                    <div class="project-section">
+                        <h3>Network Infrastructure Equipment</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Core Routing Infrastructure</h4>
+                                <ul>
+                                    <li><strong>Router Model:</strong> Cisco Router-PT</li>
+                                    <li><strong>Deployment:</strong> 2 units (Coimbra HQ & Internet Gateway)</li>
+                                    <li><strong>Function:</strong> Inter-site routing & Internet connectivity</li>
+                                    <li><strong>Protocols:</strong> Static routing with failover capabilities</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Switching Infrastructure</h4>
+                                <ul>
+                                    <li><strong>Layer 2 Switches:</strong> 19 × Cisco 2960-24TT</li>
+                                    <li><strong>Layer 3 Switch:</strong> 1 × Cisco 3650-24PS</li>
+                                    <li><strong>Features:</strong> VLAN support, port security, QoS</li>
+                                    <li><strong>Capacity:</strong> 24 ports per switch with PoE support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Wireless Infrastructure</h4>
+                                <ul>
+                                    <li><strong>Access Points:</strong> Cisco AC-PT series</li>
+                                    <li><strong>Coverage:</strong> Coimbra headquarters</li>
+                                    <li><strong>Security:</strong> WPA2 enterprise authentication</li>
+                                    <li><strong>SSID:</strong> WIFI-Coimbra (secured network)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Server Infrastructure</h4>
+                                <ul>
+                                    <li><strong>DHCP Server:</strong> Centralized IP management for all sites</li>
+                                    <li><strong>DNS Server:</strong> Internal domain resolution services</li>
+                                    <li><strong>Web Server:</strong> Company intranet portal</li>
+                                    <li><strong>Location:</strong> Coimbra data center (redundant setup)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Services Configuration Section -->
+                    <div class="project-section">
+                        <h3>Network Services Implementation</h3>
+                        
+                        <h4>DHCP Service Architecture</h4>
+                        <p>Implemented centralized DHCP service with department-specific IP pools, ensuring automatic IP assignment 
+                        across all network segments while maintaining proper subnet isolation and security policies.</p>
+                        
+                        <h4>DNS Service Configuration</h4>
+                        <p>Configured internal DNS resolution with the primary domain "intranet.omicron.local" providing seamless 
+                        name resolution across all company locations and supporting internal service discovery.</p>
+                        
+                        <h4>Routing Protocol Implementation</h4>
+                        <div class="code-block">
+                            <strong>Core Network Routes:</strong><br>
+                            • Default Gateway: 0.0.0.0/0 via 172.16.2.254<br>
+                            • Internal Networks: 10.0.0.0/8 via local interfaces<br><br>
+                            <strong>ISP Gateway Configuration:</strong><br>
+                            • Internet Route: 0.0.0.0/0 via 89.2.0.2<br>
+                            • Corporate Networks: 10.0.0.0/8 via 172.16.2.1<br><br>
+                            <strong>Redundancy Planning:</strong><br>
+                            • Backup routes configured for critical paths<br>
+                            • Load balancing for high-traffic segments
+                        </div>
+                        
+                        <h4>Wireless Network Configuration</h4>
+                        <p>Deployed enterprise-grade wireless infrastructure in Coimbra with automatic IP assignment via DHCP 
+                        (10.2.70.X range) and secure access through SSID: WIFI-Coimbra with enterprise authentication.</p>
+                    </div>
+
+                    <!-- Internal Web Server Section -->
+                   <div class="project-section">
+                       <h3>Corporate Intranet Portal</h3>
+                       <p><strong>Internal URL:</strong> http://intranet.omicron.local</p>
+                       <p>Developed and deployed an internal web portal accessible from all company locations, providing 
+                       centralized access to corporate resources and project information:</p>
+                       <div class="code-block">
+                           <strong>Web Server Specifications:</strong><br>
+                           • Server IP: 10.2.50.10<br>
+                           • Port: 80 (HTTP)<br>
+                           • Domain: intranet.omicron.local<br>
+                           • Content: Company information, network documentation, employee resources<br><br>
+                           <strong>Access Control:</strong><br>
+                           • Available to all internal VLANs<br>
+                           • Restricted to corporate network only<br>
+                           • Load balancing for high availability<br>
+                           • Regular backup and maintenance schedule
+                       </div>
+                   </div>
+
+                   <!-- Connectivity Tests Section -->
+                   <div class="project-section">
+                       <h3>Comprehensive Network Testing & Validation</h3>
+                       
+                       <h4>Internal Network Connectivity Assessment</h4>
+                       <p>Conducted extensive connectivity testing across all network segments to ensure proper functionality 
+                       and optimal performance throughout the infrastructure:</p>
+                       
+                       <div class="test-result success">
+                           <strong>Intra-Department Connectivity:</strong> RH Coimbra (VLAN 102) - All internal communications verified
+                       </div>
+                       
+                       <div class="test-result success">
+                           <strong>Inter-Site Department Connectivity:</strong> Finance Coimbra ↔ Finance Porto - Cross-site communication operational
+                       </div>
+                       
+                       <div class="test-result success">
+                           <strong>Cross-Department Connectivity:</strong> HR ↔ IT Coimbra - Proper inter-departmental access confirmed
+                       </div>
+                       
+                       <div class="test-result success">
+                           <strong>Multi-Site Cross-Department:</strong> HR Coimbra ↔ Administration Porto - Complex routing scenarios validated
+                       </div>
+                       
+                       <h4>Internet Connectivity Verification</h4>
+                       <p>Validated external connectivity from all network segments to ensure reliable Internet access across 
+                       the entire corporate infrastructure:</p>
+                       
+                       <div class="row">
+                           <div class="col-md-6">
+                               <div class="test-result success">Coimbra HQ - Human Resources (VLAN 102)</div>
+                               <div class="test-result success">Coimbra HQ - Finance (VLAN 202)</div>
+                               <div class="test-result success">Coimbra HQ - Administration (VLAN 302)</div>
+                               <div class="test-result success">Coimbra HQ - IT Department (VLAN 402)</div>
+                               <div class="test-result success">Porto Branch - Finance (VLAN 21)</div>
+                               <div class="test-result success">Porto Branch - Administration (VLAN 22)</div>
+                               <div class="test-result success">Porto Branch - Logistics (VLAN 23)</div>
+                           </div>
+                           <div class="col-md-6">
+                               <div class="test-result success">Ericeira Branch - Human Resources (VLAN 27)</div>
+                               <div class="test-result success">Ericeira Branch - Finance (VLAN 28)</div>
+                               <div class="test-result success">Ericeira Branch - IT Department (VLAN 29)</div>
+                               <div class="test-result success">Viseu Branch - Finance (VLAN 502)</div>
+                               <div class="test-result success">Viseu Branch - Logistics (VLAN 602)</div>
+                               <div class="test-result success">Tavira Branch - Administration (VLAN 702)</div>
+                               <div class="test-result success">Tavira Branch - Logistics (VLAN 802)</div>
+                           </div>
+                       </div>
+                       
+                       <h4>Wireless Network Performance Testing</h4>
+                       <div class="test-result success">
+                           Wireless Infrastructure (VLAN 902) - Successful Internet connectivity with acceptable latency variance for wireless medium
+                       </div>
+                   </div>
+
+                   <!-- Performance Analysis Section -->
+                   <div class="project-section">
+                       <h3>Performance Analysis & Optimization</h3>
+                       
+                       <h4>Network Performance Metrics</h4>
+                       <p>Comprehensive performance analysis conducted across all network segments to ensure optimal operation:</p>
+                       
+                       <div class="code-block">
+                           <strong>Latency Analysis:</strong><br>
+                           • Intra-site communication: < 1ms average<br>
+                           • Inter-site communication: 5-15ms average<br>
+                           • Internet connectivity: 20-50ms average<br>
+                           • Wireless connectivity: 2-8ms additional latency<br><br>
+                           
+                           <strong>Throughput Testing:</strong><br>
+                           • Internal switches: 100 Mbps full duplex<br>
+                           • Inter-site links: 1 Gbps capacity<br>
+                           • Internet connection: 100 Mbps shared<br>
+                           • Wireless throughput: 54 Mbps theoretical maximum
+                       </div>
+                       
+                       <h4>Security Implementation</h4>
+                       <p>Implemented comprehensive security measures across the network infrastructure:</p>
+                       
+                       <ul>
+                           <li><strong>VLAN Segmentation:</strong> Departmental isolation preventing unauthorized access</li>
+                           <li><strong>Access Control Lists:</strong> Configured inter-VLAN communication policies</li>
+                           <li><strong>Wireless Security:</strong> WPA2 enterprise authentication with rotating keys</li>
+                           <li><strong>Network Monitoring:</strong> Continuous monitoring for anomalous traffic patterns</li>
+                       </ul>
+                   </div>
+
+                   <!-- Conclusions Section -->
+                   <div class="project-section">
+                       <h3>Project Conclusions & Future Recommendations</h3>
+               
+                       <div class="success-metrics">
+                           <h4>📊 Project Success Metrics</h4>
+                           <p>The Omicron Lda. network infrastructure project successfully achieved all primary objectives with outstanding results:</p>
+                   
+                           <div class="metrics-grid">
+                               <div class="metric-card">
+                                   <div class="metric-icon">🌐</div>
+                                   <div class="metric-text">100% Connectivity Success Rate</div>
+                               </div>
+                               <div class="metric-card">
+                                   <div class="metric-icon">🔒</div>
+                                   <div class="metric-text">Comprehensive VLAN Security</div>
+                               </div>
+                               <div class="metric-card">
+                                   <div class="metric-icon">⚡</div>
+                                   <div class="metric-text">Reliable Centralized Services</div>
+                               </div>
+                               <div class="metric-card">
+                                   <div class="metric-icon">🏗️</div>
+                                   <div class="metric-text">Scalable Multi-Site Architecture</div>
+                               </div>
+                               <div class="metric-card">
+                                   <div class="metric-icon">📈</div>
+                                   <div class="metric-text">Optimal Performance Metrics</div>
+                               </div>
+                           </div>
+                       </div>
+               
+                       <div class="future-enhancements">
+                           <h4>🔮 Future Enhancement Opportunities</h4>
+                           <p>Strategic recommendations for network expansion and continuous improvement:</p>
+                   
+                           <div class="enhancement-list">
+                               <div class="enhancement-item">
+                                   <h5>Redundancy Implementation</h5>
+                                   <p>Deploy backup links for critical connections to ensure zero downtime and business continuity</p>
+                               </div>
+                               <div class="enhancement-item">
+                                   <h5>QoS Implementation</h5>
+                                   <p>Prioritize traffic for business-critical applications to optimize performance and user experience</p>
+                               </div>
+                               <div class="enhancement-item">
+                                   <h5>Network Monitoring</h5>
+                                   <p>Implement advanced monitoring and alerting systems for proactive network management</p>
+                               </div>
+                               <div class="enhancement-item">
+                                   <h5>Security Enhancements</h5>
+                                   <p>Deploy firewalls and intrusion detection systems to strengthen network security posture</p>
+                               </div>
+                               <div class="enhancement-item">
+                                   <h5>Wireless Expansion</h5>
+                                   <p>Extend wireless coverage to all branch locations for improved mobility and flexibility</p>
+                               </div>
+                               <div class="enhancement-item">
+                                   <h5>IPv6 Migration</h5>
+                                   <p>Prepare for future IPv6 implementation to ensure long-term network sustainability</p>
+                               </div>
+                           </div>
+                       </div>
+               
+                       <div class="learning-outcomes">
+                           <h4>🎯 Learning Outcomes</h4>
+                           <div class="learning-highlights">
+                               <p>This project provided comprehensive hands-on experience with enterprise network design, implementation, 
+                               and troubleshooting. The practical application of theoretical concepts resulted in mastery of essential 
+                               networking competencies required for modern network engineering roles.</p>
+                       
+                               <div class="highlight-tags">
+                                   <span class="highlight-tag">Advanced VLAN Configuration</span>
+                                   <span class="highlight-tag">Routing Protocol Implementation</span>
+                                   <span class="highlight-tag">Network Service Deployment</span>
+                                   <span class="highlight-tag">Performance Optimization</span>
+                                   <span class="highlight-tag">Security Implementation</span>
+                                   <span class="highlight-tag">Troubleshooting Techniques</span>
+                                   <span class="highlight-tag">Enterprise Architecture</span>
+                                   <span class="highlight-tag">Multi-Site Integration</span>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- Contact Section -->
+                    <div class="project-section text-center">
+                        <h3>Interested in Learning More?</h3>
+                        <p>
+                            If you'd like to discuss this project or explore potential collaborations, feel free to reach out.
+                        </p>
+                        <a href="index.html#contact" class="cta-button">Contact Me</a>
+                </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!--footer-copyright start-->
+   <footer id="footer-copyright" class="footer-copyright">
+       <div class="container">
+           <div class="hm-footer-copyright text-center">
+               <p>
+                   &copy; copyright Guilherme Puga.
+               </p>
+           </div>
+       </div>
+
+       <div id="scroll-Top">
+           <div class="return-to-top">
+               <i class="fa fa-angle-up" id="scroll-top"></i>
+           </div>
+       </div>
+   </footer>
+   <!--footer-copyright end-->
+
+           <!-- Include all js compiled plugins (below), or include individual files as needed -->
+           <script src="assets/js/jquery.js"></script>
+
+           <!--modernizr.min.js-->
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+   		<!--bootstrap.min.js-->
+           <script src="assets/js/bootstrap.min.js"></script>
+
+   		<!-- bootsnav js -->
+   		<script src="assets/js/bootsnav.js"></script>
+
+   		<!-- jquery.sticky.js -->
+   		<script src="assets/js/jquery.sticky.js"></script>
+
+   		<!-- for progress bar start-->
+
+   		<!-- progressbar js -->
+   		<script src="assets/js/progressbar.js"></script>
+
+   		<!-- appear js -->
+   		<script src="assets/js/jquery.appear.js"></script>
+
+   		<!-- for progress bar end -->
+
+   		<!--owl.carousel.js-->
+           <script src="assets/js/owl.carousel.min.js"></script>
+
+
+   		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+           <!--Custom JS-->
+           <script src="assets/js/custom.js"></script>
+
+    </body>
+</html>
