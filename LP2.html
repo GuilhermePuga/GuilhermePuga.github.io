@@ -38,69 +38,113 @@
 
 	<style>
 		/* Additional project-specific styles */
-		.project-banner {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			position: relative;
-			background: url(assets/images/about/welcome-banner.jpg) no-repeat;
-			background-size: cover;
-			background-position: center;
-			height: 400px;
-		}
-		
-		.project-banner:before {
-			position: absolute;
-			content: " ";
-			top: 0;
-			left: 0;
-			background: rgba(31,44,108,.65);
-			width: 100%;
-			height: 100%;
-		}
-		
-		.project-header-text h2 {
-			color: #fff;
-			font-size: 42px;
-			font-weight: 700;
-			text-transform: uppercase;
-			line-height: 1.5;
-			position: relative;
-		}
-		
-		.project-header-text h2 span {
-			color: #49b6ff;
-		}
-		
-		.project-header-text p {
-			color: #fff;
-			font-size: 18px;
-			font-weight: 300;
-			margin: 20px 0;
-			position: relative;
-		}
-		
-		.project-details {
-			padding: 80px 0;
-		}
-		
-		.project-section {
-			margin-bottom: 60px;
-		}
-		
-		.project-section h3 {
-			font-size: 24px;
-			color: #3c4258;
-			margin-bottom: 20px;
-			font-weight: 600;
-		}
-		
-		.project-section p {
-			font-size: 16px;
-			color: #636a82;
-			line-height: 1.8;
-			margin-bottom: 20px;
-		}
+		/* Project Banner */
+        .project-banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 400px;
+            margin-top: 70px;
+        }
+
+        .project-banner:before {
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            background: rgba(31,44,108,.65);
+            width: 100%;
+            height: 100%;
+        }
+
+        .project-header-text h2 {
+            color: #fff;
+            font-size: 42px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.5;
+            position: relative;
+        }
+
+        .project-header-text h2 span {
+            color: #49b6ff;
+        }
+
+        .project-header-text p {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 300;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        /* Project Details */
+        .project-details {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        /* Project Sections */
+        .project-section {
+            margin-bottom: 60px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(14,25,80,.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #49b6ff, #667eea, #764ba2);
+        }
+
+        .project-section h3 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .project-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #49b6ff, #667eea);
+            border-radius: 2px;
+        }
+
+        .project-section h4 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .project-section p {
+            font-size: 16px;
+            color: #5a6c7d;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
 		
 		.project-tech {
 			margin: 30px 0;
